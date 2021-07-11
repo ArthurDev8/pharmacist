@@ -26,7 +26,6 @@ export default {
       commit('setCurrentClient', idx)
     },
     updateCurClient({ state, dispatch }) {
-
       dispatch("getClient", state.cur)
     },
     updateResultSaleAndCur({ commit }, data) {

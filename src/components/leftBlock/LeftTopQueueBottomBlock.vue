@@ -1,6 +1,6 @@
 <template>
   <div class="content flex flex-col">
-    <div class="sm440:hidden">Залишилось у черзі:</div>
+    <div class="sm440:hidden">Осталось в очереди:</div>
     <div>
       <span class="font-bold">{{ queue }}</span
       >/{{ clients.length }}

@@ -3,12 +3,12 @@
     <div class="circle_container flex justify-center items-center px-2">
       <div class="circle_content text-left">
         <div class="content">
-          <div class="hello">Ласкаво просимо в грі</div>
-          <div class="main_text font-bold pt-10">Допоможи</div>
+          <div class="hello">Добро пожаловать в игру</div>
+          <div class="main_text font-bold pt-10">Помоги</div>
           <div class="main_text font-bold uppercase">Фармацевту</div>
         </div>
         <div class="flex justify-center mt-20">
-          <button class="btn_go py-2 px-16" @click="go">Розпочати</button>
+          <button class="btn_go py-2 px-16" @click="go">Начать</button>
         </div>
       </div>
     </div>

@@ -31,7 +31,7 @@
             фармацевтов.
           </div>
         </div>
-        <div class="flex flex-start mt-24">
+        <div class="flex flex-start mt-24 mb-12 md:justify-center">
           <button @click="go" class="btn button py-4 px-12">Попробовать ещё</button>
         </div>
       </div>

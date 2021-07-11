@@ -3,6 +3,8 @@
     <div class="parametru text-left sm440:hidden">Параметри:</div>
     <div class="flex justify-between flex-wrap">
       <div
+        v-for="(smile, index) in 2"
+        :key="index"
         class="
           smile_block
           flex
@@ -14,26 +16,9 @@
           my-2
         "
       >
-        <div><img src="@/assets/img/upset_icon.png" /></div>
+        <div><img :src="require(`@/assets/img/${index + 1}icon.png`)" /></div>
         <div class="smile_block__number pr-5 xl:pr-1">
-          {{ resultSale[0].count }}
-        </div>
-      </div>
-      <div
-        class="
-          smile_block
-          flex
-          justify-between
-          items-center
-          w-5/12
-          lg:w-full
-          p-2
-          my-2
-        "
-      >
-        <div><img src="@/assets/img/happy_icon.png" /></div>
-        <div class="smile_block__number pr-5 xl:pr-1">
-          {{ resultSale[1].count }}
+          {{ resultSale[index].count }}
         </div>
       </div>
     </div>

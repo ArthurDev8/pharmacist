@@ -11,7 +11,7 @@
       sm440:px-2
     "
   >
-    <div class="flex justify-center items-center h-8/12">
+    <div class="flex justify-center items-center h-8/12 pt-4">
       <CardItem :client="client" />
     </div>
     <ButtonsGroup />

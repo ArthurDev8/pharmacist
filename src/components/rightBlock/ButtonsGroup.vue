@@ -1,6 +1,6 @@
 <template>
   <div class="h-4/12 flex justify-between mt-8 mb-8 lg-md:flex-col">
-    <div class="but1">
+    <div v-for="(btn, index) in 3" :key="index" :class="`but${index + 1}`">
       <button
         class="
           px-12
@@ -10,42 +10,10 @@
           lg-md:px-12 lg-md:my-2
           sm440:px-4
         "
-        name="1"
+        :name="index + 1"
         @click="sellDrug"
       >
-        Препарат 1
-      </button>
-    </div>
-    <div class="but2">
-      <button
-        class="
-          px-12
-          py-4
-          xlLg:py-2
-          xl-lg:px-6
-          lg-md:px-12 lg-md:my-2
-          sm440:px-4
-        "
-        name="2"
-        @click="sellDrug"
-      >
-        Препарат 2
-      </button>
-    </div>
-    <div class="but3">
-      <button
-        class="
-          px-12
-          py-4
-          xlLg:py-2
-          xl-lg:px-6
-          lg-md:px-12 lg-md:my-2
-          sm440:px-4
-        "
-        name="3"
-        @click="sellDrug"
-      >
-        Препарат 3
+        Препарат {{ index + 1 }}
       </button>
     </div>
   </div>
